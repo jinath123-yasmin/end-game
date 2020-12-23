@@ -11,7 +11,7 @@ var highScore=[{
 },
 {
   name: "Mausam",
-  score:8
+  score: 8
 },];
 
 function play(question,answer){
@@ -33,14 +33,17 @@ var questions=[
     question: "Favourite Superhero ",
     answer:"superman",
   },{
-    question: "favourite FRIENDS character ",
+    question: "favourite F.R.I.E.N.D.S character ",
     answer: "Chandler Bing",
   },{
      question: "where do she live? ",
      answer: "Assam",
   },{
-     question: "where did she study? ",
-     answer: "Bvec",
+     question: "what is her favourite colour? ",
+     answer: "blue",
+  },{
+     question: "what is her favourite junk food? ",
+     answer: "pizza",
   }
 ];
 
@@ -48,6 +51,8 @@ for( var i=0;i<questions.length;i++){
   var currentQuestion = questions[i];
   play(currentQuestion.question,currentQuestion.answer);
 }
+
+
 console.log("Scores");
 for(var i=0;i<highScore.length;i++){
   var currentScore = highScore[i];
